@@ -1,0 +1,1 @@
+# Webpack + babel + eslint + react template

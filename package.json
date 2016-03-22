@@ -1,21 +1,21 @@
 {
-  "name": "webpack_config",
+  "name": "ReactJS template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sugrob69/webpack_config.git"
+    "url": "git+https://github.com/sugrob69/reactjs_template.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sugrob69/webpack_config/issues"
+    "url": "https://github.com/sugrob69/reactjs_template/issues"
   },
-  "homepage": "https://github.com/sugrob69/webpack_config#readme",
+  "homepage": "https://github.com/sugrob69/reactjs_template#readme",
   "devDependencies": {
     "babel-core": "^6.7.2",
     "babel-eslint": "^6.0.0-beta.6",

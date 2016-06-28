@@ -25,7 +25,7 @@ module.exports = {
     },
 
     //карта кода только в деве
-    devtool: NODE_ENV == 'development' ? "source-map" : null,
+    devtool: NODE_ENV == 'development' ? "eval" : null,
 
     //плагины и переменные, которы будут доступны в модулях
     plugins: [
@@ -53,17 +53,20 @@ module.exports = {
         preLoaders: [ //добавили ESlint в preloaders
             {
                 test: /\.js$/,
-                loaders: ['eslint'],
-                include: [
-                    path.resolve(__dirname, "src"),
-                ],
+                loader: "eslint-loader",
+                exclude: /node_modules/
             }
         ],
         loaders: [{
             test: /\.js$/,
             loader: 'babel?presets[]=es2015,plugins[]=transform-es2015-modules-commonjs',
-            plugins: ['transform-runtime']
+            plugins: ['transform-runtime'],
+            exclude: /node_modules/
         }]
+    },
+
+    eslint: {
+        configFile: path.resolve(__dirname, ".eslintrc")
     }
 };
 

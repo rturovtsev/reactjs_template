@@ -1,1 +1,1 @@
-# Webpack + babel + eslint + react template
+# Points on ReactJS
